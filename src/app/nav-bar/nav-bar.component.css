@@ -1,0 +1,13 @@
+.bar{
+
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(40, 40, 40);
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  align-content: center;
+  font-size: x-large;
+}
