@@ -1,0 +1,37 @@
+.menuLine{
+  position: fixed;
+  display: flex;
+  margin: 5px;
+  bottom: 0;
+  width: 100%;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "header header header"
+    "statistics content cube"
+    "footer footer footer";
+  grid-template-columns: 4fr 10fr 3fr;
+  grid-template-rows: 65px 1fr 230px;
+  /*gap: 5px;*/
+  background-color: rgb(18, 18, 18);
+}
+.container > div {
+  background-color: rgb(18, 18, 18);
+  padding: 10px;
+}
+.container > div.header {
+  padding: 3px;
+  grid-area: header;
+}
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.footer {
+  grid-area: footer;
+  display: flex;
+}
