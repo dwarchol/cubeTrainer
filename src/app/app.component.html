@@ -1,2 +1,12 @@
-<app-nav-bar/>r
-<router-outlet/>
+<div class="container">
+  <div class="header"><app-nav-bar/></div>
+  <div class="statistics"><app-stats-space></app-stats-space></div>
+  <div class="content"><router-outlet/></div>
+  <div class="cube"><app-cube-data-viewer/></div>
+  <div class="footer">
+    <app-menu-btn text="TRENUJ" imageName="green_cube.png"></app-menu-btn>
+    <app-menu-btn text="MARATON ALGÓW" imageName="green_stopwatch.png"></app-menu-btn>
+    <app-menu-btn text="TRENUJ" imageName="green_cube.png"></app-menu-btn>
+    <app-menu-btn text="MARATON ALGÓW" imageName="green_stopwatch.png" data-tooltip="Jestem wyskakującą chmurką z tekstem"></app-menu-btn>
+  </div>
+</div>

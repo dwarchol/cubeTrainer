@@ -1,7 +1,5 @@
-.bar{
-
-  height: 40px;
-  padding: 5px;
+.space{
+  height: 100%;
   margin: 5px;
   background-color: rgb(40, 40, 40);
   border: 1px solid rgb(60, 60, 60);
