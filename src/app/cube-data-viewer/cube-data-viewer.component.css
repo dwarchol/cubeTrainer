@@ -1,12 +1,78 @@
-div {
-  height: 100%;
+img{
+  width: 80%;
+}
+.connectButton {
+  width: calc(100% - 14px);
+  margin: 7px;
+  height: 50px;
+  background-color: rgb(70, 70, 70);
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 8px #00ff00;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.connectButton:hover {
+  background-color: #00ff00;
+  color: #000;
+  box-shadow: 0 0 20px #00ff00;
+}
+.cube-connected-dot{
   margin: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: lawngreen;
+  box-shadow: 0 0 1px 1px lawngreen;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.cube-disconnected-dot{
+  margin: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  box-shadow: 0 0 3px 1px red;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.cube-data-container {
+  display: grid;
+  position:relative;
+  height: 100%;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 65px auto 64px;
   background-color: rgb(40, 40, 40);
   border: 1px solid rgb(60, 60, 60);
   border-radius: 10px;
   box-shadow: 0 0 5px 1px rgb(0, 255, 128);
   color: #dffdd4;
-  text-align: center;
-  align-content: center;
-  font-size: x-large;
+}
+.container > div {
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+}
+.container > div.connected {
+  padding: 3px;
+  grid-area: connected;
+}
+.container > div.main {
+  grid-area: main;
+}
+.container > div.footer {
+  grid-area: footer;
+  margin: 10px;
 }

@@ -1,11 +1,29 @@
+.connectButton {
+  background-color: rgb(70, 70, 70);
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 8px #00ff00;
+  transition: all 0.3s ease;
+}
+
+#menu_button:hover {
+  background-color: #00ff00;
+  color: #000;
+  box-shadow: 0 0 20px #00ff00;
+}
 #menu_button{
   position: relative;
   width: 160px;
   height: 200px;
   background-color: rgb(40, 40, 40);
-  border: 1px solid rgb(60, 60, 60);
+  /*border: 1px solid rgb(60, 60, 60);*/
   border-radius: 10px;
-  box-shadow: 0 0 5px 1px rgb(0, 255, 128);
+  border: 2px solid #00ff00;
+  color: #dffdd4;;
   margin: 5px;
 }
 #menu_button_title{
@@ -13,7 +31,7 @@
   height: 60px;
   text-align: center;
   align-content: center;
-  color: #dffdd4;;
+
 }
 #menu_button_image{
   width: 140px;

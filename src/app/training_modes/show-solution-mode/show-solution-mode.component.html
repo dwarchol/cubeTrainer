@@ -1,0 +1,17 @@
+<div class="background">
+  <div class="scramble_space">{{ scramble }}</div>
+  <div><hr></div>
+  <div class="solution_space"><pre>{{ getPrettyMoves() }}</pre></div>
+  <div><hr></div>
+  <div class="buttons_space">
+    <button (click)="generateScramble()">
+      NEXT SCRAMBLE
+    </button>
+    <button (click)="reset()">
+      RESET
+    </button>
+    <button (click)="start()">
+      START
+    </button>
+  </div>
+</div>
