@@ -1,1 +1,17 @@
-<div>Cubedata</div>
+<div class="cube-data-container">
+  <div class="header">
+    <div class="header-space">
+      <img src="assets/cube.png">
+    </div>
+    <div class="cube-connected-dot"></div>
+    <div [ngClass]="cubeService.isCubeConnected? 'cube-connected-dot':'cube-disconnected-dot' "></div>
+  </div>
+  <div class="main">
+
+  </div>
+  <div class="footer">
+    <button class="connectButton" (click)="cubeService.connect()">
+      POŁĄCZ
+    </button>
+  </div>
+</div>
